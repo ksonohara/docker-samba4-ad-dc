@@ -53,7 +53,7 @@ Include ubuntu:18.04 image.
                 -e "AD_REALM=sambaad.local" \
                 -e "AD_DOMAIN=SAMBAAD" \
                 --restart=always \
-                -d sonohara/samba4-ad
+                -d sonohara/samba4-ad-dc
 
 # Other
 
