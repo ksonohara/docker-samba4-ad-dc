@@ -39,6 +39,7 @@ Include ubuntu:18.04 image.
     /var/lib/samba
     /var/log/samba
     /etc/samba
+    /run/samba
     /.docker
 
 ## Examples

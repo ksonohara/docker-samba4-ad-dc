@@ -1,9 +1,11 @@
 #!/bin/bash
 
+#timedatectl set-timezone $AD_TIMEZONE
+
 rm -rf /etc/krb5.conf
 rm -rf /etc/samba/smb.conf
 rm -rf /var/lib/samba/private/*
-rm -rf /var/lib/samba/sysvol/*
+#rm -rf /var/lib/samba/sysvol/*
 
 SAMBA_TOOL_OPTIONS=${AD_OPTIONS:-}
 [ -n "$AD_HOST_IP" ] && SAMBA_TOOL_OPTIONS="$SAMBA_TOOL_OPTIONS --host-ip=$AD_HOST_IP"
