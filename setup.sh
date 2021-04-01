@@ -28,14 +28,7 @@ else
 
   sed -i -e '11,18d' /etc/samba/smb.conf
 
-  cat /.docker/smb-global.conf >> /etc/samba/smb.conf
-  echo "[netlogon]" >> /etc/samba/smb.conf
-  echo "        path = /var/lib/samba/sysvol/sambaad.local/scripts" >> /etc/samba/smb.conf
-  echo "        read only = No" >> /etc/samba/smb.conf
-  echo "[sysvol]" >> /etc/samba/smb.conf
-  echo "        path = /var/lib/samba/sysvol" >> /etc/samba/smb.conf
-  echo "        read only = No" >> /etc/samba/smb.conf
-  cat /.docker/smb-share.conf >> /etc/samba/smb.conf
+  cp -rf /etc/samba/smb.conf /etc/samba/smb.conf.org
 fi
 
 rm -f /etc/krb5.conf
