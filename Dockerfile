@@ -4,9 +4,9 @@ MAINTAINER Expert Software Inc. / https://www.e-software.company
 LABEL name="Samba 4 AD/DC" \
       vendor="ExpertSoftware Inc." \
       license="GPLv3" \
-      build-date="20210331" \
-      build-tag="1.0.1_3" \
-      build-version="3"
+      build-date="20210525" \
+      build-tag="1.0.2_5" \
+      build-version="5"
 
 COPY config.txt /.docker/config
 COPY smb-global.txt /.docker/smb-global.conf

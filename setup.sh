@@ -2,7 +2,7 @@
 
 
 rm -rf /etc/krb5.conf
-if [ -d /var/lib/samba/sysvol/exs.e-software.network ]; then
+if [ -d /var/lib/samba/sysvol/$AD_DOMAIN ]; then
   echo 'Done. reuse.'
 else
   rm -rf /etc/samba/smb.conf
@@ -15,6 +15,7 @@ else
 
   samba-tool domain provision \
     --use-rfc2307 \
+    --use-ntvfs \
     --realm=$AD_REALM \
     --host-name=$AD_HOST \
     --domain=$AD_DOMAIN \
