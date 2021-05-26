@@ -15,7 +15,6 @@ else
 
   samba-tool domain provision \
     --use-rfc2307 \
-    --use-ntvfs \
     --realm=$AD_REALM \
     --host-name=$AD_HOST \
     --domain=$AD_DOMAIN \
