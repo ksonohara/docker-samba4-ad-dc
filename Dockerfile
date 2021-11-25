@@ -35,6 +35,6 @@ ENV AD_OPTIONS ""
 
 VOLUME ["/var/lib/samba", "/var/log/samba", "/etc/samba", "/run/samba"]
 
-EXPOSE 53 135 137/udp 138/udp 139 389 445 464 636
+EXPOSE 53 53/udp 135 137/udp 138/udp 139 389 445 464 636
 
 RUN apt autoremove -y && apt clean && rm -rf /var/lib/apt/lists/*
