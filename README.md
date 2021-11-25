@@ -39,7 +39,7 @@ Include sonohara/ubuntu-base
 
 ### --port
 
-    53 DNS
+    53/udp DNS
     135
     137
     138
@@ -81,5 +81,5 @@ Include sonohara/ubuntu-base
 
 K.Sonohara
 - GitHub: https://github.com/ksonohara
-- Homepage: [ExpertSoftware Inc.](https://www.e-software.company "ExpertSoftware Inc.")
-- Facebbok: [株式会社エキスパートソフトウェア](https://www.facebook.com/expertsoftwareinc "株式会社エキスパートソフトウェア")
+- Homepage: [ExpertEnterprise Inc.](https://www.e-e.company "ExpertEnterprise Inc.")
+- Facebbok: [株式会社エキスパートエンタープライズ](https://www.facebook.com/expertsoftwareinc "株式会社エキスパートエンタープライズ")
